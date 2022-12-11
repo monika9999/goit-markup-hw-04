@@ -103,6 +103,19 @@ body {
   padding: 32px 0 32px 50px;
 }
 
+.icons-article {
+  background-color: #F5F4FA;
+  margin-bottom: 30px;
+}
+
+.icons-contact {
+  fill: #757575;
+}
+
+.icons-contact:focus,.icons-contact:hover {
+  fill: var(--selection-color);
+}
+
 /*HEADER - DARK BACKGROUND*/
 .darkbg-text {
   color: var(--header-color);
@@ -258,6 +271,25 @@ body {
   margin-bottom: 16px;
 }
 
+.team-icons-list {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.icons-team {
+  fill: #AFB1B8;
+padding-top: 12px;
+padding-left: 12px;
+}
+
+.icon-social-media:hover > .icons-team,
+.icon-social-media:focus > .icons-team {
+  background-color: var(--selection-color);
+  fill:  var(--header-color);
+  border-radius: 50%;
+}
+
 /*FOOTER*/
 
 .footer-bg {
@@ -304,6 +336,41 @@ body {
 
 .footer-list-item {
   margin: 9px 0;
+}
+
+/* JOIN TO US */
+
+.footer-flex {
+  display:flex;
+}
+
+.join-us-title {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: calc(0.03*14px);
+  color: var(--header-color);
+  margin-left: 70px;
+  margin-bottom: 20px;
+}
+.join-us-icons {
+  display: flex;
+  gap: 10px;
+  margin-left: 70px;
+}
+
+.media-footer {
+  fill: var(--header-color);
+}
+
+.icon-footer {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+
+}
+.icon-footer:focus,
+.icon-footer:hover {
+  background-color: var(--selection-color);
+  border-radius: 50%;
 }
 
 /*PORTFOLIO*/
@@ -378,36 +445,35 @@ body {
     0px 2px 2px rgb(0 0 0 / 12%);
 }
 
-/*ICONS*/
-
-.icons-article {
-  background-color: #F5F4FA;
-  margin-bottom: 30px;
+/* OUR CLIENTS */
+.clients-title {
+  font-weight: 700;
+  text-align: center;
+  font-size: 36px;
+  letter-spacing: calc(0.03*36px);
+  margin: 0;
+  padding-top: 94px;
 }
 
-.icons-contact {
-  fill: #757575;
-}
-
-.icons-contact:focus,.icons-contact:hover {
-  fill: var(--selection-color);
-}
-
-.team-icons-list {
+.clients-list-flex {
   display: flex;
-  gap: 10px;
-  align-items: center;
+  justify-content: space-between;
+  gap: 27px;
+  padding-top: 50px;
+  padding-bottom: 94px;
 }
 
-.icons-team {
+.client-svg {
+  display: block;
+  border-color: #AFB1B8;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4%;
   fill: #AFB1B8;
-padding-top: 12px;
-padding-left: 12px;
 }
 
-.icon-social-media:hover > .icons-team,
-.icon-social-media:focus > .icons-team {
-  background-color: var(--selection-color);
-  fill:  #FFFFFF;
-  border-radius: 50%;
+.client-svg:hover,
+.client-svg:focus {
+  fill: var(--selection-color);
+  border-color: var(--selection-color);
 }
