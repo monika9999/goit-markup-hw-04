@@ -341,36 +341,38 @@ padding-left: 12px;
 /* JOIN TO US */
 
 .footer-flex {
-  display:flex;
+display: flex;
 }
 
-.join-us-title {
-  text-transform: uppercase;
-  font-size: 14px;
-  letter-spacing: calc(0.03*14px);
-  color: var(--header-color);
-  margin-left: 70px;
+.footer-title {
   margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--header-color);
+  text-transform: uppercase;
 }
-.join-us-icons {
+
+.join-to-us {
+  margin-top: 10px;
+  margin-left: 70px;
+}
+.social-footer {
   display: flex;
   gap: 10px;
-  margin-left: 70px;
+  align-items: center;
+  align-content: center;
 }
 
-.media-footer {
-  fill: var(--header-color);
-}
-
-.icon-footer {
+.contact-icon {
   background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--header-color);
   border-radius: 50%;
-
 }
-.icon-footer:focus,
-.icon-footer:hover {
+
+.contact-icon:hover {
   background-color: var(--selection-color);
-  border-radius: 50%;
 }
 
 /*PORTFOLIO*/
@@ -443,6 +445,12 @@ padding-left: 12px;
   background-color: var(--selection-color);
   box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%),
     0px 2px 2px rgb(0 0 0 / 12%);
+}
+
+.page-list:hover,
+.page-list:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /* OUR CLIENTS */
