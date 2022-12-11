@@ -255,6 +255,7 @@ body {
   text-align: center;
   line-height: 1.187;
   color: var(--text-color);
+  margin-bottom: 16px;
 }
 
 /*FOOTER*/
@@ -385,23 +386,28 @@ body {
 }
 
 .icons-contact {
-  color: #757575;
+  fill: #757575;
 }
 
-.icons-social-media-list {
+.icons-contact:focus,.icons-contact:hover {
+  fill: var(--selection-color);
+}
+
+.team-icons-list {
   display: flex;
-  list-style-type: none;
+  gap: 10px;
+  align-items: center;
 }
 
-.icon-social-media {
-  color: #AFB1B8;
+.icons-team {
+  fill: #AFB1B8;
+padding-top: 12px;
+padding-left: 12px;
 }
-.circle {
-  fill: rgba(255, 255, 255, 0.1);
-  color: var(--milk);
-}
-.circle:hover,
-.circle:focus {
-  fill: var(--sky);
-  cursor: pointer;
+
+.icon-social-media:hover > .icons-team,
+.icon-social-media:focus > .icons-team {
+  background-color: var(--selection-color);
+  fill:  #FFFFFF;
+  border-radius: 50%;
 }
