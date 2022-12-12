@@ -146,7 +146,6 @@ body {
 }
 
 .darkbg {
-  background-color: var(--bground-color);
   height: 600px;
   align-items: center;
   background-image: linear-gradient(
@@ -352,6 +351,7 @@ display: flex;
   letter-spacing: 0.03em;
   color: var(--header-color);
   text-transform: uppercase;
+  margin-left: 70px;
 }
 
 .join-to-us {
@@ -363,6 +363,8 @@ display: flex;
   gap: 10px;
   align-items: center;
   align-content: center;
+  list-style-type: none;
+  margin-left: 70px;
 }
 
 .contact-icon {
